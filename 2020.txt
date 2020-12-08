@@ -1,0 +1,117 @@
+RequestURL : https://bpt.lenovo.com:8005//api/SMB/GetPlant
+RequestTime : 2020-12-07 03:03:30
+---------------RequestBodyBegin--------------------
+{"Token":"8d5bd18d-bd14-4b65-a2df-68da61cd683b","PlantRequestEntitys":[{"ItemGuid":"00000000-0000-0000-0000-000000000000","ProductFamily":"97bcf6db-09a0-4737-99ae-1428c0055a97","ProductGroup":"NB","Country":"MY","PN":"20RHS03D00"}],"Country":"MY"}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"Plants":[{"ItemGuid":"00000000-0000-0000-0000-000000000000","PlantCode":"1","PlantName":"Import from China"}],"code":"OK","FunctionFlg":true,"ExceptionMsg":null}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/basic/api/v1/cost/plat_form
+RequestTime : 2020-12-07 03:03:33
+---------------RequestBodyBegin--------------------
+[{"phCode":"22WS2WPP43S20RH20T","ctoNo":"20RHCTO1WW","key":"ba584bdd-87a1-4205-a26d-a4668a37e2f8"}]
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"phCode":"22WS2WPP43S20RH20T","ctoNo":"20RHCTO1WW","key":"ba584bdd-87a1-4205-a26d-a4668a37e2f8","platFormList":[]}]}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://bpt.lenovo.com:8005//api/SMB/GetPlantCode
+RequestTime : 2020-12-07 03:33:11
+---------------RequestBodyBegin--------------------
+{"Token":"3453a231-9e50-4a93-8678-d964763f88e4","PlantRequestEntitys":[{"ItemGuid":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","ProductFamily":"B5ACC29D-E891-49F6-B355-76DF04A0AE71","ProductGroup":"Visual","Country":"MY","PN":"66A0KAC6MY"}],"Country":"MY"}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"Plants":[{"ItemGuid":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","PlantCode":"L111","PlantName":"L111"}],"code":"OK","FunctionFlg":true,"ExceptionMsg":null}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/output/api/v1/cost/mtm
+RequestTime : 2020-12-07 03:33:13
+---------------RequestBodyBegin--------------------
+{"systemId":"smb","product":[{"key":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","country":[{"countryCode":"MY","salesOrg":"MY10","salesOffice":"MY20"}],"mtmNo":"66A0KAC6MY","ctoNo":"","phCode":"DD116LEC19166A060T","plant":["L111"],"mot":null,"warrantyCode":"","charValues":{"platForm":"","cv":[]},"type":null}],"costType":["bmc","freight","warranty","funding"]}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"key":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","mtmNo":"66A0KAC6MY","ctoNo":null,"mot":null,"bmc":{"countryCode":"MY","plant":"L111","cycle":"202012B","m1":55.8717,"m2":55.8180,"m3":56.6095,"m4":57.5326,"m5":57.5326,"m6":57.5326,"m7":57.5326,"m8":57.5326,"m9":57.5326,"m10":57.5326,"m11":57.5326,"m12":57.5326,"preM1":55.87,"preM2":54.78,"preM3":54.78,"type":"cfe"},"charValues":null,"platForm":null,"plants":["L111"],"bmcSearchType":"cfe","phCode":"DD116LEC19166A060T","country":[{"salesOrg":"MY10","salesOffice":"MY20","countryCode":"MY","keys":"MY10MY20"}],"freight":[{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"AIR","m1":32.2414,"m2":32.2414,"m3":32.2414,"m4":32.2414,"m5":32.2414,"m6":32.2414,"m7":32.2414,"m8":32.2414,"m9":32.2414,"m10":32.2414,"m11":32.2414,"m12":32.2414,"preM1":32.2414,"preM2":30.0000,"preM3":30.0000,"outboundM1":32.2414,"outboundM2":32.2414,"outboundM3":32.2414,"outboundM4":32.2414,"outboundM5":32.2414,"outboundM6":32.2414,"outboundM7":32.2414,"outboundM8":32.2414,"outboundM9":32.2414,"outboundM10":32.2414,"outboundM11":32.2414,"outboundM12":32.2414,"outboundPreM1":32.2414,"outboundPreM2":30.0000,"outboundPreM3":30.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"GEO_MIX","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":0.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"OCEAN","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":0.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"TRUCK","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":null}],"warranty":null,"funding":null,"gapCost":null}]}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/basic/api/v1/cost/plat_form
+RequestTime : 2020-12-07 03:33:28
+---------------RequestBodyBegin--------------------
+[{"phCode":"DD116LEC191","ctoNo":"","key":"d9352dab-7669-4015-8a03-727d407be6a0"}]
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"phCode":"DD116LEC191","ctoNo":"","key":"d9352dab-7669-4015-8a03-727d407be6a0","platFormList":[]}]}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://bpt.lenovo.com:8005//api/SMB/GetPlantCode
+RequestTime : 2020-12-07 03:35:42
+---------------RequestBodyBegin--------------------
+{"Token":"249908c4-e452-4a6a-b1df-05b4a9a2c6b9","PlantRequestEntitys":[{"ItemGuid":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","ProductFamily":"B5ACC29D-E891-49F6-B355-76DF04A0AE71","ProductGroup":"Visual","Country":"MY","PN":"66A0KAC6MY"}],"Country":"MY"}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"Plants":[{"ItemGuid":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","PlantCode":"L111","PlantName":"L111"}],"code":"OK","FunctionFlg":true,"ExceptionMsg":null}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/output/api/v1/cost/mtm
+RequestTime : 2020-12-07 03:35:45
+---------------RequestBodyBegin--------------------
+{"systemId":"smb","product":[{"key":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","country":[{"countryCode":"MY","salesOrg":"MY10","salesOffice":"MY20"}],"mtmNo":"66A0KAC6MY","ctoNo":"","phCode":"DD116LEC19166A060T","plant":["L111"],"mot":null,"warrantyCode":"","charValues":{"platForm":"","cv":[]},"type":null}],"costType":["bmc","freight","warranty","funding"]}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"key":"D541C361-EB58-44C8-83AA-5E8AF7C4B462","mtmNo":"66A0KAC6MY","ctoNo":null,"mot":null,"bmc":{"countryCode":"MY","plant":"L111","cycle":"202012B","m1":55.8717,"m2":55.8180,"m3":56.6095,"m4":57.5326,"m5":57.5326,"m6":57.5326,"m7":57.5326,"m8":57.5326,"m9":57.5326,"m10":57.5326,"m11":57.5326,"m12":57.5326,"preM1":55.87,"preM2":54.78,"preM3":54.78,"type":"cfe"},"charValues":null,"platForm":null,"plants":["L111"],"bmcSearchType":"cfe","phCode":"DD116LEC19166A060T","country":[{"salesOrg":"MY10","salesOffice":"MY20","countryCode":"MY","keys":"MY10MY20"}],"freight":[{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"AIR","m1":32.2414,"m2":32.2414,"m3":32.2414,"m4":32.2414,"m5":32.2414,"m6":32.2414,"m7":32.2414,"m8":32.2414,"m9":32.2414,"m10":32.2414,"m11":32.2414,"m12":32.2414,"preM1":32.2414,"preM2":30.0000,"preM3":30.0000,"outboundM1":32.2414,"outboundM2":32.2414,"outboundM3":32.2414,"outboundM4":32.2414,"outboundM5":32.2414,"outboundM6":32.2414,"outboundM7":32.2414,"outboundM8":32.2414,"outboundM9":32.2414,"outboundM10":32.2414,"outboundM11":32.2414,"outboundM12":32.2414,"outboundPreM1":32.2414,"outboundPreM2":30.0000,"outboundPreM3":30.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"GEO_MIX","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":0.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"OCEAN","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":0.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"TRUCK","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":null}],"warranty":null,"funding":null,"gapCost":null}]}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/basic/api/v1/cost/plat_form
+RequestTime : 2020-12-07 03:35:49
+---------------RequestBodyBegin--------------------
+[{"phCode":"DD116LEC191","ctoNo":"","key":"6d171e9c-ebca-499c-a92c-3399aa21b9d2"}]
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"phCode":"DD116LEC191","ctoNo":"","key":"6d171e9c-ebca-499c-a92c-3399aa21b9d2","platFormList":[]}]}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://bpt.lenovo.com:8005//api/SMB/GetPlant
+RequestTime : 2020-12-07 03:36:16
+---------------RequestBodyBegin--------------------
+{"Token":"00b8e839-06ec-4962-bc34-8d7156854db2","PlantRequestEntitys":[{"ItemGuid":"00000000-0000-0000-0000-000000000000","ProductFamily":"F81BCE0B-CAA7-40C0-AB88-E45CAE89984C","ProductGroup":"Visual","Country":"MY","PN":"65DCAAS6MY"}],"Country":"MY"}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"Plants":[{"ItemGuid":"00000000-0000-0000-0000-000000000000","PlantCode":"1","PlantName":"Import from China"}],"code":"OK","FunctionFlg":true,"ExceptionMsg":null}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/basic/api/v1/cost/plat_form
+RequestTime : 2020-12-07 03:36:18
+---------------RequestBodyBegin--------------------
+[{"phCode":"DD106LEV201","ctoNo":"","key":"3265ae69-46d1-48ca-abc4-88d9a1ae4455"}]
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"phCode":"DD106LEV201","ctoNo":"","key":"3265ae69-46d1-48ca-abc4-88d9a1ae4455","platFormList":[]}]}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://bpt.lenovo.com:8005//api/SMB/GetPlantCode
+RequestTime : 2020-12-07 03:36:23
+---------------RequestBodyBegin--------------------
+{"Token":"1a6fc154-3e58-404b-9719-72ded7dd505f","PlantRequestEntitys":[{"ItemGuid":"AAD3AC8A-4817-4938-872D-60A7301997A3","ProductFamily":"F81BCE0B-CAA7-40C0-AB88-E45CAE89984C","ProductGroup":"Visual","Country":"MY","PN":"65DCAAS6MY"}],"Country":"MY"}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"Plants":[{"ItemGuid":"AAD3AC8A-4817-4938-872D-60A7301997A3","PlantCode":"L111","PlantName":"L111"}],"code":"OK","FunctionFlg":true,"ExceptionMsg":null}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/output/api/v1/cost/mtm
+RequestTime : 2020-12-07 03:36:25
+---------------RequestBodyBegin--------------------
+{"systemId":"smb","product":[{"key":"AAD3AC8A-4817-4938-872D-60A7301997A3","country":[{"countryCode":"MY","salesOrg":"MY10","salesOffice":"MY20"}],"mtmNo":"65DCAAS6MY","ctoNo":"","phCode":"DD106LEV20165DC60T","plant":["L111"],"mot":null,"warrantyCode":"","charValues":{"platForm":"","cv":[]},"type":null}],"costType":["bmc","freight","warranty","funding"]}
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"key":"AAD3AC8A-4817-4938-872D-60A7301997A3","mtmNo":"65DCAAS6MY","ctoNo":null,"mot":null,"bmc":{"countryCode":"MY","plant":"L111","cycle":"202012B","m1":69.6989,"m2":74.3949,"m3":77.3868,"m4":79.9378,"m5":79.9378,"m6":79.9378,"m7":79.9378,"m8":79.9378,"m9":79.9378,"m10":79.9378,"m11":79.9378,"m12":79.9378,"preM1":69.70,"preM2":68.33,"preM3":68.33,"type":"cfe"},"charValues":null,"platForm":null,"plants":["L111"],"bmcSearchType":"cfe","phCode":"DD106LEV20165DC60T","country":[{"salesOrg":"MY10","salesOffice":"MY20","countryCode":"MY","keys":"MY10MY20"}],"freight":[{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"AIR","m1":32.2414,"m2":32.2414,"m3":32.2414,"m4":32.2414,"m5":32.2414,"m6":32.2414,"m7":32.2414,"m8":32.2414,"m9":32.2414,"m10":32.2414,"m11":32.2414,"m12":32.2414,"preM1":32.2414,"preM2":30.0000,"preM3":30.0000,"outboundM1":32.2414,"outboundM2":32.2414,"outboundM3":32.2414,"outboundM4":32.2414,"outboundM5":32.2414,"outboundM6":32.2414,"outboundM7":32.2414,"outboundM8":32.2414,"outboundM9":32.2414,"outboundM10":32.2414,"outboundM11":32.2414,"outboundM12":32.2414,"outboundPreM1":32.2414,"outboundPreM2":30.0000,"outboundPreM3":30.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"GEO_MIX","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":0.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"OCEAN","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":0.0000},{"countryCode":"MY","plant":"L111","cycle":"202012B","mot":"TRUCK","m1":0.0000,"m2":0.0000,"m3":0.0000,"m4":0.0000,"m5":0.0000,"m6":0.0000,"m7":0.0000,"m8":0.0000,"m9":0.0000,"m10":0.0000,"m11":0.0000,"m12":0.0000,"preM1":0.0000,"preM2":0.0000,"preM3":0.0000,"outboundM1":0.0000,"outboundM2":0.0000,"outboundM3":0.0000,"outboundM4":0.0000,"outboundM5":0.0000,"outboundM6":0.0000,"outboundM7":0.0000,"outboundM8":0.0000,"outboundM9":0.0000,"outboundM10":0.0000,"outboundM11":0.0000,"outboundM12":0.0000,"outboundPreM1":0.0000,"outboundPreM2":0.0000,"outboundPreM3":null}],"warranty":null,"funding":null,"gapCost":null}]}
+---------------ResponseBodyEnd---------------------
+
+RequestURL : https://cpm.lenovo.com/basic/api/v1/cost/plat_form
+RequestTime : 2020-12-07 03:36:30
+---------------RequestBodyBegin--------------------
+[{"phCode":"DD106LEV201","ctoNo":"","key":"dd8e74d3-0a0e-488e-8cf8-85f6a25b5b93"}]
+---------------RequestBodyEnd----------------------
+---------------ResponseBodyBegin-------------------
+{"code":200,"msg":"","data":[{"phCode":"DD106LEV201","ctoNo":"","key":"dd8e74d3-0a0e-488e-8cf8-85f6a25b5b93","platFormList":[]}]}
+---------------ResponseBodyEnd---------------------
+
