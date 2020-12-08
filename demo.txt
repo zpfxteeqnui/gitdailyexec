@@ -6,3 +6,6 @@ hello git3
 hello git4
 
 add dev
+
+
+test -am
